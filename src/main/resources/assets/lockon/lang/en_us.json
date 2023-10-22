@@ -5,5 +5,8 @@
 
   "text.autoconfig.lockon.title": "Lock On Configuration",
   "text.autoconfig.lockon.option.range": "Range",
-  "text.autoconfig.lockon.option.range.@Tooltip": "The amount of blocks away a target can be locked on to."
+  "text.autoconfig.lockon.option.range.@Tooltip": "The amount of blocks away a target can be locked on to.",
+  "text.autoconfig.lockon.option.enableForInteractionEntities": "Lock On to Interaction Entities",
+  "text.autoconfig.lockon.option.enableForInteractionEntities.@Tooltip[0]": "Enable for server plugins that add",
+  "text.autoconfig.lockon.option.enableForInteractionEntities.@Tooltip[1]": "custom mobs through Interaction entities."
 }

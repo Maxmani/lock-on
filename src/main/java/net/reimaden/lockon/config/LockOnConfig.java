@@ -12,16 +12,18 @@ public class LockOnConfig implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public int range = 16;
 
+    @ConfigEntry.Gui.Tooltip(count = 2)
+    public boolean enableForInteractionEntities = true;
+
     @Override
     public void validatePostLoad() throws ValidationException {
-        ConfigData.super.validatePostLoad();
         this.validate();
     }
 
-    public void validate() {
+    public void validate() throws ValidationException {
         if (range < 8 || range > 96) {
             range = 16;
-            LockOn.LOGGER.warn("Lock on range is out of bounds, resetting to default value");
+            throw new ValidationException("Range must be between 8 and 96");
         }
     }
 }

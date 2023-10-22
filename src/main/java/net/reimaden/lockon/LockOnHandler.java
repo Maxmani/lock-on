@@ -135,9 +135,13 @@ public class LockOnHandler {
     private static Entity findNearby(Player player) {
         LockOnConfig config = AutoConfig.getConfigHolder(LockOnConfig.class).getConfig();
         final Predicate<Entity> lineOfSight = player::hasLineOfSight;
+        final Predicate<Entity> interactionsEnabled = entity -> config.enableForInteractionEntities || !(entity instanceof Interaction);
 
         List<Entity> entities = player.level()
-                .getEntitiesOfClass(Entity.class, player.getBoundingBox().inflate(config.range)).stream().filter(lineOfSight).filter(ENTITY_PREDICATE).toList();
+                .getEntitiesOfClass(Entity.class, player.getBoundingBox().inflate(config.range)).stream()
+                .filter(interactionsEnabled)
+                .filter(lineOfSight)
+                .filter(ENTITY_PREDICATE).toList();
 
         if (lockedOn) {
             cycle++;
