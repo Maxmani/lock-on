@@ -1,0 +1,9 @@
+{
+  "key.categories.lockon" : "Lock On",
+  "key.lockon.lock_on" : "Lock On",
+  "key.lockon.switchTargets" : "Switch Targets",
+
+  "text.autoconfig.lockon.title": "Lock On Configuration",
+  "text.autoconfig.lockon.option.range": "Range",
+  "text.autoconfig.lockon.option.range.@Tooltip": "The amount of blocks away a target can be locked on to."
+}

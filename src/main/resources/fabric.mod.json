@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "lockon",
+	"version": "${version}",
+	"name": "Lock On",
+	"description": "Lock onto enemies, ported to Fabric!",
+	"authors": [
+		"Maxmani",
+		"Tfarcenim"
+	],
+	"contact": {
+		"sources": "https://github.com/Maxmani/lock-on",
+		"issues": "https://github.com/Maxmani/lock-on/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/lockon/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+          "net.reimaden.lockon.LockOn"
+		],
+		"modmenu": [
+			"net.reimaden.lockon.config.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"lockon.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.0",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*",
+		"cloth-config2": ">=12.0.0"
+	}
+}
