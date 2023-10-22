@@ -75,7 +75,7 @@ public class LockOnHandler {
         switchTargets = KeyBindingHelper.registerKeyBinding(new KeyMapping(
                 KEY_SWITCH_TARGETS,
                 InputConstants.Type.KEYSYM,
-                GLFW.GLFW_KEY_TAB,
+                GLFW.GLFW_KEY_V,
                 KEY_CATEGORIES_LOCKON
         ));
 
