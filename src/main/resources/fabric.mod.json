@@ -9,6 +9,7 @@
 		"Tfarcenim"
 	],
 	"contact": {
+		"homepage": "https://modrinth.com/mod/lock-on",
 		"sources": "https://github.com/Maxmani/lock-on",
 		"issues": "https://github.com/Maxmani/lock-on/issues"
 	},
@@ -32,5 +33,12 @@
 		"java": ">=17",
 		"fabric-api": "*",
 		"cloth-config2": ">=12.0.0"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/WESu6XEcF7"
+			}
+		}
 	}
 }
