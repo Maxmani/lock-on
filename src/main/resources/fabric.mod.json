@@ -3,7 +3,7 @@
 	"id": "lockon",
 	"version": "${version}",
 	"name": "Lock On",
-	"description": "Lock onto enemies, ported to Fabric!",
+	"description": "Lock on to enemies, ported to Fabric!",
 	"authors": [
 		"Maxmani",
 		"Tfarcenim"
